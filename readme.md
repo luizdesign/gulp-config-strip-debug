@@ -1,4 +1,4 @@
-# gulp-strip-debug
+# gulp-config-strip-debug
 [![Build Status](https://travis-ci.org/luizdesign/gulp-config-strip-debug.svg?branch=master)](https://travis-ci.org/luizdesign/gulp-config-strip-debug)
 
 > Strip `console`, `alert`, and `debugger` statements from JavaScript code with [config-strip-debug](https://github.com/luizdesign/config-strip-debug)
