@@ -1,19 +1,18 @@
 {
-  "name": "gulp-strip-debug",
-  "version": "1.0.2",
-  "description": "Strip console and debugger statements from JavaScript code",
+  "name": "gulp-config-strip-debug",
+  "version": "1.0.0",
+  "description": "Strip alert, console and debugger statements from JavaScript code",
   "license": "MIT",
-  "repository": "sindresorhus/gulp-strip-debug",
+  "repository": "luizdesign/gulp-config-strip-debug",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "name": "Luiz Kota",
+    "email": "luiz.zk@gmail.com"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "istanbul cover _mocha test/"
   },
   "files": [
     "index.js"
@@ -37,10 +36,12 @@
   ],
   "dependencies": {
     "gulp-util": "^3.0.0",
-    "strip-debug": "^1.0.0",
+    "config-strip-debug": "^1.0.0",
     "through2": "^0.6.1"
   },
   "devDependencies": {
-    "mocha": "*"
+    "chai": "^3.2.0",
+    "mocha": "*",
+    "istanbul": "*"
   }
 }

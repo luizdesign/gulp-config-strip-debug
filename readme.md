@@ -1,12 +1,13 @@
-# gulp-strip-debug [![Build Status](https://travis-ci.org/sindresorhus/gulp-strip-debug.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-strip-debug)
+# gulp-strip-debug
+[![Build Status](https://travis-ci.org/luizdesign/gulp-config-strip-debug.svg?branch=master)](https://travis-ci.org/luizdesign/gulp-config-strip-debug)
 
-> Strip `console`, `alert`, and `debugger` statements from JavaScript code with [strip-debug](https://github.com/sindresorhus/strip-debug)
+> Strip `console`, `alert`, and `debugger` statements from JavaScript code with [config-strip-debug](https://github.com/luizdesign/config-strip-debug)
 
 
 ## Install
 
-```
-$ npm install --save-dev gulp-strip-debug
+```sh
+npm install --save-dev gulp-config-strip-debug
 ```
 
 
@@ -14,7 +15,7 @@ $ npm install --save-dev gulp-strip-debug
 
 ```js
 var gulp = require('gulp');
-var stripDebug = require('gulp-strip-debug');
+var stripDebug = require('gulp-config-strip-debug');
 
 gulp.task('default', function () {
 	return gulp.src('src/app.js')
@@ -24,6 +25,15 @@ gulp.task('default', function () {
 ```
 
 
-## License
+## Testing
+For execute the unit tests:
+```sh
+npm test
+```
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+### Coverage
+For generate the code coverage this module use the [istambul](http://gotwarlost.github.io/istanbul/). The code coverage report is generate in **coverage/** folder.
+
+
+## Contribute
+For contribute with this project, create a fork in github https://github.com/luizdesign/gulp-config-strip-debug.
